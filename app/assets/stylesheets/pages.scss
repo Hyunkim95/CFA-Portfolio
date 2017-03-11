@@ -2,8 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.portfolio{
+#portfolio, #webdesign{
   margin: 30px auto 30px auto;
+}
+
+#portfolio{
+  padding-bottom: 200px;
 }
 
 .project{
@@ -41,12 +45,12 @@
 
 /* ================================================= */
 /* ABOUT HTML */
-.skills{
+#skills{
   margin: 30px auto 30px auto;
 }
 
-.skills{
-  padding-bottom: 300px;
+#skills{
+  padding-bottom: 200px;
 }
 
 .grid-container{
@@ -119,12 +123,26 @@
   -ms-transform: translate(-50%, -50%);
 }
 
+@media (max-width:768px) {
+  .text{
+    font-size: 12px;
+  }
+
+  .testimonial blockquote{
+    font-size: 8px;
+  }
+
+  #skills, #experience, #portfolio{
+    padding-bottom: 0;
+  }
+}
+
 .g500{
   background-color: #009688;
 }
 
 /* ======================================= */
-.experience{
+#experience{
   margin: 30px auto 30px auto;
 }
 
@@ -177,12 +195,89 @@
   transform: translate(5px, 5px);
 }
 
-// @media (max-width:776px) {
-//   .experience-rect img{
-//     height: 100%;
-//     max-height: 200px;
-//     max-width: 400px;
-//     width: 100%;
-//     margin: auto;
-//   }
-// }
+/* ===================================================== */
+
+.sydney{
+  margin: 20px auto;
+}
+
+.sydney img{
+  display: block;
+  height: 200px;
+  width: 200px;
+  margin: 5% auto 0 auto;
+}
+
+.cf h1, .sydney h1{
+  text-align: center;
+}
+
+form {
+   max-width: 600px;
+   text-align: center;
+   margin: 5% auto 5% auto;
+
+  input, textarea {
+     border:0; outline:0;
+     padding: 1em;
+     border-radius: 8px;
+     display: block;
+     width: 100%;
+     margin-top: 1em;
+     font-family: 'Merriweather', sans-serif;
+     box-shadow: (0 1px 1px rgba(black, 0.1));
+     resize: none;
+
+    &:focus {
+       box-shadow: 0 0px 2px rgba(red, 1) !important;
+    }
+  }
+
+  #input-submit {
+     color: white;
+     background: #FFB74D;
+     cursor: pointer;
+
+    &:hover {
+       box-shadow: 0 1px 1px 1px rgba(#aaa, 0.6);
+    }
+  }
+
+  textarea {
+      height: 126px;
+  }
+}
+
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right { width: 50%; }
+
+.left {
+     margin-right: 2%;
+}
+
+
+@media (max-width: 480px) {
+  .half {
+     width: 100%;
+     float: none;
+     margin-bottom: 0;
+  }
+}
+
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}

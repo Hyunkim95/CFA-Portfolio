@@ -7,20 +7,20 @@
             <p>Hyun Kim</p>
         </div>
         <div class="profile-usertitle-job">
-            <p>Developer</p>
+            <p>Hi, I am a student currently studying to be a full stack developer. I enjoy creating things so looking forward to make your products with my own twist.</p>
         </div>
         <div class="social-media">
             <div class="icons">
-              <img src="<%= asset_path 'facebook.svg'%>">
+              <a href="http://www.facebook.com"><img src="<%= asset_path 'facebook.svg'%>"></a>
             </div>
             <div class="icons">
-              <img src="<%= asset_path 'github.svg'%>">
+              <a href="http://www.github.com"><img src="<%= asset_path 'github.svg'%>"></a>
             </div>
             <div class="icons">
-              <img src="<%= asset_path 'twitter.svg'%>">
+              <a href="http://www.twitter.com"><img src="<%= asset_path 'twitter.svg'%>"></a>
             </div>
             <div class="icons">
-              <img src="<%= asset_path 'googleplus.svg'%>">
+              <a href="http://www.google.com"><img src="<%= asset_path 'googleplus.svg'%>"></a>
             </div>
         </div>
     </div>
@@ -31,42 +31,29 @@
 
             <ul id="menu-content" class="menu-content collapse out">
 
-                <li  data-toggle="collapse" data-target="#products" class="collapsed">
-                  <a href="#"><i class="fa fa-gift fa-lg"></i> Work <span class="arrow"></span></a>
+              <!-- here --> <li  data-toggle="<%= disable(root_path) %>" data-target="#products" class="collapsed <%= is_active?(root_path) %>"> <!--  HERE -->
+                  <a> <i class="fa fa-laptop fa-lg"></i> <%= link_to 'Work', root_path %> <span class="arrow"></span> </a>
                 </li>
-                <ul class="sub-menu collapse" id="products">
-                    <li><a href="#">Latest</a></li> <!--- use active --->
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">Branding</a></li>
-                    <li><a href="#">Photography</a></li>
-                    <li><a href="#">Print</a></li>
-                    <li><a href="#">Mobile Design</a></li>
+
+                  <!-- here --> <ul class="sub-menu <%= open_menu(root_path) %>" id="products">
+                    <li><a href="#portfolio">Latest</a></li> <!--- use active --->
+                    <li><a href="#webdesign">Web Design</a></li>
                 </ul>
 
 
-                <li data-toggle="collapse" data-target="#service" class="collapsed">
-                  <a href="#"><i class="fa fa-globe fa-lg"></i> About <span class="arrow"></span></a>
+                <li data-toggle="<%= disable(pages_about_path) %>e" data-target="#service" class="collapsed <%= is_active?(pages_about_path) %>">
+                  <a> <i class="fa fa-money fa-lg"></i> <%= link_to 'Skill', pages_about_path %> <span class="arrow"></span> </a>
                 </li>
-                <ul class="sub-menu collapse" id="service">
-                    <li>Skills</li>
-                    <li>Experience</li>
-                    <li>Education</li>
-                    <li>Clients</li>
-                    <li>Testimonials</li>
-                    <li>Blog</li>
+
+                <ul class="sub-menu <%= open_menu(pages_about_path) %>" id="service">
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience/Testimonial</a></li>
                 </ul>
 
 
-                <li data-toggle="collapse" data-target="#new" class="collapsed">
-                  <a href="#"><i class="fa fa-car fa-lg"></i> Contact <span class="arrow"></span></a>
+                <li data-toggle="collapse" data-target="#new" class="collapsed <%= is_active?(pages_contact_path) %>">
+                  <a> <i class="fa fa-users fa-lg"></i> <%= link_to 'Contact', pages_contact_path %> </a>
                 </li>
-                <ul class="sub-menu collapse" id="new">
-                    <li>Address</li>
-                    <li>Phone</li>
-                    <li>Social Network</li>
-                    <li>Email</li>
-                </ul>
-
             </ul>
      </div>
 </div>

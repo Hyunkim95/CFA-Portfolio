@@ -47,7 +47,7 @@
 }
 .nav-side-menu ul .active,
 .nav-side-menu li .active {
-  border-left: 3px solid #4FC3F7;
+  border-left: 3px solid #FFB74D;
   //background-color: ;
 }
 .nav-side-menu ul .sub-menu li.active,
@@ -94,7 +94,7 @@
   padding-right: 20px;
 }
 .nav-side-menu li:hover {
-  border-left: 3px solid #d19b3d;
+  border-left: 3px solid #FFB74D;
   background-color: #4DB6AC;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -123,9 +123,28 @@
     text-align: center;
   }
 
-//    .profile{
-//         display: none;
-//    }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-side-menu {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .nav-side-menu .toggle-btn {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 10 !important;
+    padding: 3px;
+    background-color: #00796B;
+    color: #000;
+    width: 40px;
+    text-align: center;
+  }
+
 }
 
 @media (min-width: 767px) {
@@ -153,6 +172,10 @@ body {
     border-radius: 50%;
 }
 
+.profile-usertitle-job p{
+  margin: 0 10px 20px 10px;
+}
+
 .social-media{
     display: flex;
     width: 100%;
@@ -164,3 +187,6 @@ body {
     margin-left: 5px;
     margin-right: 5px;
 }
+
+
+/* if they are on homepage, they cannot expand other menus; it will also expand its current menus and allow it to close */
