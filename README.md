@@ -33,4 +33,8 @@ Upon reflection, if I were to improve this portfolio I would work on the followi
 * Clear design process
 * Consider a design which is adaptable for both monitor, tablets and smartphones
 
+## Colour Palette
 
+![3807e7fd489afd85bed6eac65ca0729c.jpg](https://www.dropbox.com/s/f5arkaqwugo08l0/3807e7fd489afd85bed6eac65ca0729c.jpg?dl=0&raw=1)
+
+The colour palette was inspired from the image above, teal being the major colour and contrasts with the orange.
