@@ -16,7 +16,6 @@ I drew inspirations from sites such as:
 * awwward
 * google material blogs
 
-![Screen Shot 2017-03-12 at 1.21.55 AM.png](https://www.dropbox.com/s/yqe6wnnt5mgtz19/Screen%20Shot%202017-03-12%20at%201.21.55%20AM.png?dl=0&raw=1)
 
 ## Problems I encountered
 
@@ -37,6 +36,4 @@ Upon reflection, if I were to improve this portfolio I would work on the followi
 
 ## Colour Palette
 
-![3807e7fd489afd85bed6eac65ca0729c.jpg](https://www.dropbox.com/s/f5arkaqwugo08l0/3807e7fd489afd85bed6eac65ca0729c.jpg?dl=0&raw=1)
-
-The colour palette was inspired from the image above, teal being the major colour and contrasts with the orange.
+The colour palette was mainly teal and orange
