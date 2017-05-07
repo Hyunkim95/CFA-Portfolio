@@ -1,5 +1,7 @@
 # Portfolio
 
+https://hyunsportfolio2.herokuapp.com/
+
 This portfolio was created with 1-2 weeks of knowledge HTML and CSS, it uses flexbox and bootstrap as it's core foundation. I wanted the portfolio to be simple and minimalistic, it was built with the intentions to meet the google material guideline and easy navigation of projects I have done. 
 
 ## Ideation
